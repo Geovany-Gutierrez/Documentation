@@ -18,9 +18,9 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
+            className="textowip button button--secondary button--lg"
             to="docs/category/documentacao">
-            Minha documentação ⏱️
+             🚧 WIP
           </Link>
         </div>
       </div>
@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="D will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
