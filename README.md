@@ -1,8 +1,10 @@
+Inclua essas linhas no seu arquivo Markdown para aplicar o comportamento de abrir em uma nova aba.
+
 # Documentação do Projeto
 
-Este projeto utiliza [**Docusaurus**](https://docusaurus.io/) para a documentação. O objetivo é fornecer uma fonte confiável e fácil de usar para todas as informações relevantes sobre o projeto.
+Este projeto utiliza <a href="https://docusaurus.io/" target="_blank"><b>Docusaurus</b></a> para a documentação. O objetivo é fornecer uma fonte confiável e fácil de usar para todas as informações relevantes sobre o projeto.
 
-[**Acesse a documentação aqui**](https://geovany-gutierrez.github.io/Documentation/)
+<a href="https://geovany-gutierrez.github.io/Documentation/" target="_blank"><b>Acesse a documentação aqui</b></a>
 
 ## Mini Tutorial
 
