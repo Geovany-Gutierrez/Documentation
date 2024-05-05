@@ -10,7 +10,7 @@ const config = {
   // A URL de produção do seu site
   url: 'https://geovany-gutierrez.github.io',
   // O caminho base sob o qual seu site é servido
-  baseUrl: '/my-website/',
+  baseUrl: '/Documentation/',
 
   // Configuração de deploy no GitHub Pages
   organizationName: 'Geovany-Gutierrez', // Seu usuário ou organização no GitHub
