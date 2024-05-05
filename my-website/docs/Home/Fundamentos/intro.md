@@ -180,3 +180,15 @@ public class Pessoa {
     }
 }
 ```
+
+## **Tratamento de Erros em Aplicativos Móveis:**
+O tratamento de erros é essencial para manter a estabilidade do aplicativo. Exemplo de `try-catch` em C#:
+
+```csharp
+try {
+    // Código que pode lançar uma exceção
+} catch (Exception ex) {
+    // Tratamento da exceção
+    Console.WriteLine("Ocorreu um erro: " + ex.Message);
+}
+```

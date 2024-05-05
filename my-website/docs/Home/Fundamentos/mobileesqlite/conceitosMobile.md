@@ -79,18 +79,6 @@ void OnButtonClicked(object sender, EventArgs e) {
 }
 ```
 
-### **Tratamento de Erros em Aplicativos Móveis:**
-O tratamento de erros é essencial para manter a estabilidade do aplicativo. Exemplo de `try-catch` em C#:
-
-```csharp
-try {
-    // Código que pode lançar uma exceção
-} catch (Exception ex) {
-    // Tratamento da exceção
-    Console.WriteLine("Ocorreu um erro: " + ex.Message);
-}
-```
-
 ### **Armazenamento de Dados Local e Remoto em Aplicativos Móveis:**
 O armazenamento de dados pode ser feito localmente ou em servidores remotos. Exemplo de uso do SQLite em .NET MAUI:
 

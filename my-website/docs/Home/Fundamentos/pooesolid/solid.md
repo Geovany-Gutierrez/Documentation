@@ -60,15 +60,27 @@ Objetos de uma classe base devem ser substituíveis por objetos de subclasses se
 ### Exemplo do LSP em C#:
 
 ```csharp
-public class Ave {
-    public virtual void Voar() {
-        // Implementação do voo
+public interface IAve {
+    void Comer();
+}
+
+public interface IAveVoadora {
+    void Voar();
+}
+
+public class Coruja : IAve, IAveVoadora {
+    public void Comer() {
+        // Comer
+    }
+
+    public void Voar() {
+        // Voar
     }
 }
 
-public class Pinguim : Ave {
-    public override void Voar() {
-        throw new InvalidOperationException("Pinguins não voam");
+public class Avestruz : IAve {
+    public void Comer() {
+        // Comer
     }
 }
 ```

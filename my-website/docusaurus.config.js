@@ -59,7 +59,7 @@ const config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Home',
         },
         /*{ to: '/docs/flutter', label: 'Flutter', position: 'left' },
         {
@@ -76,8 +76,8 @@ const config = {
           title: 'Documentação',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/Fundamentos/intro',
+              label: 'Home',
+              to: '/docs/Home',
             },
           ],
         },
