@@ -1,9 +1,9 @@
 {
-  "label": "Documentação",
+  "label": "Fundamentos",
   "position": 1,
   "link": {
     "type": "generated-index",
-    "title": "Bem-vindo à Documentação",
+    "title": "Bem-vindo aos Fundamentos",
     "description": "Selecione uma categoria para começar."
   }
 }
