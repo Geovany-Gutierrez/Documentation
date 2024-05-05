@@ -7,45 +7,41 @@ const config = {
   tagline: 'Vá para documentos',
   favicon: 'img/favicon.ico',
 
-  // Defina aqui a URL de produção do seu site
+  // A URL de produção do seu site
   url: 'https://geovany-gutierrez.github.io',
-  // Defina o caminho base sob o qual seu site é servido
-  // Para o deploy no GitHub Pages, geralmente é '/<nomeDoRepositorio>/'
-  baseUrl: '/Documentation/',
+  // O caminho base sob o qual seu site é servido
+  baseUrl: '/my-website/',
 
   // Configuração de deploy no GitHub Pages
-  organizationName: 'Geovany-Gutierrez', // Geralmente o nome do seu usuário ou organização no GitHub
-  projectName: 'Documentation', // Geralmente o nome do seu repositório
+  organizationName: 'Geovany-Gutierrez', // Seu usuário ou organização no GitHub
+  projectName: 'Documentation', // O nome do seu repositório
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Mesmo que você não use internacionalização, você pode usar este campo para definir
-  // metadados úteis como o idioma do html. Por exemplo, se o seu site for em português,
-  // você pode querer substituir "en" por "pt".
   i18n: {
-    defaultLocale: 'pt',
-    locales: ['pt'],
+    defaultLocale: 'en',
+    locales: ['en'],
   },
 
   presets: [
     [
       'classic',
-      ({
+      {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Altere isto para o seu repositório
-          editUrl: 'https://github.com/Geovany-Gutierrez/Documentation/edit/main/',
+          // O caminho para editar a documentação no seu repositório
+          editUrl: 'https://github.com/Geovany-Gutierrez/Documentation/edit/main/my-website/',
         },
         blog: {
           showReadingTime: true,
-          // Altere isto para o seu repositório
-          editUrl: 'https://github.com/Geovany-Gutierrez/Documentation/edit/main/blog/',
+          // O caminho para editar posts do blog no seu repositório
+          editUrl: 'https://github.com/Geovany-Gutierrez/Documentation/edit/main/my-website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-      }),
+      },
     ],
   ],
 
@@ -64,12 +60,12 @@ const config = {
           position: 'left',
           label: 'Tutorial',
         },
-        { to: '/flutter', label: 'Flutter', position: 'left' },
+        /*{ to: '/docs/flutter', label: 'Flutter', position: 'left' },
         {
           href: 'https://github.com/Geovany-Gutierrez/Documentation',
           label: 'GitHub',
           position: 'right',
-        },
+        },* descomentar apos iniciar flutter */
       ],
     },
     footer: {
@@ -80,7 +76,7 @@ const config = {
           items: [
             {
               label: 'Tutorial',
-              to: '/docs/intro',
+              to: '/docs/fundamentos/intro',
             },
           ],
         },
