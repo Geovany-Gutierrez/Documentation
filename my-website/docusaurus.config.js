@@ -7,10 +7,11 @@ const config = {
   tagline: 'Vá para documentos',
   favicon: 'img/favicon.ico',
 
+  trailingSlash: false,
   // A URL de produção do seu site
   url: 'https://geovany-gutierrez.github.io',
   // O caminho base sob o qual seu site é servido
-  baseUrl: '/Documentation/',
+  baseUrl: '/Documentation',
 
   // Configuração de deploy no GitHub Pages
   organizationName: 'Geovany-Gutierrez', // Seu usuário ou organização no GitHub
@@ -20,8 +21,8 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
 
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'pt',
+    locales: ['pt'],
   },
 
   presets: [
@@ -76,7 +77,7 @@ const config = {
           items: [
             {
               label: 'Tutorial',
-              to: '/docs/fundamentos/intro',
+              to: '/docs/Fundamentos/intro',
             },
           ],
         },
