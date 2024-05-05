@@ -31,4 +31,3 @@ Siga estas etapas para fazer alterações na documentação e atualizar o site:
    npm run deploy
    ```
    - Lembre-se: se você não executar `npm run build` e `npm run deploy` após fazer suas alterações, elas não aparecerão no site do GitHub Pages.
-```
