@@ -77,7 +77,7 @@ const config = {
           items: [
             {
               label: 'Home',
-              to: '/docs/Home',
+              to: '/docs/',
             },
           ],
         },
