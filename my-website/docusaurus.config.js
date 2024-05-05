@@ -49,7 +49,7 @@ const config = {
   themeConfig: {
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Documentação',
+      title: 'Documentation',
       logo: {
         alt: 'Logo do Projeto',
         src: 'img/logo.svg',
