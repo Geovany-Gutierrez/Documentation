@@ -1,5 +1,3 @@
-Inclua essas linhas no seu arquivo Markdown para aplicar o comportamento de abrir em uma nova aba.
-
 # Documentação do Projeto
 
 Este projeto utiliza <a href="https://docusaurus.io/" target="_blank"><b>Docusaurus</b></a> para a documentação. O objetivo é fornecer uma fonte confiável e fácil de usar para todas as informações relevantes sobre o projeto.
