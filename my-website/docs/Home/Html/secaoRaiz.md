@@ -8,7 +8,7 @@ sidebar_label: Seção raiz
 
 **Conceito e Uso:** A seção raiz, representada por `<body>`, delimita o conteúdo visível da página HTML.
 
-**Exemplo de código (body.html):**
+**Exemplo de código (body):**
 ```html
 <body>
     <header>
@@ -23,9 +23,9 @@ sidebar_label: Seção raiz
 </body>
 ```
 
-- **body.html**
+- **body**
 
-**Descrição:** Este arquivo geralmente contém o conteúdo visível da página, como cabeçalhos, parágrafos e imagens.
+**Descrição:** Este elemento geralmente contém o conteúdo visível da página, como cabeçalhos, parágrafos e imagens.
 
 ```html
 <body>

@@ -8,14 +8,14 @@ sidebar_label: Elementos de texto
 
 **Conceito e Uso:** Elementos de texto, como `<p>` e `<h1>`, são usados para exibir texto na página, variando em tamanho e importância semântica.
 
-**Exemplo de código (p.html):**
+**Exemplo de código (p):**
 ```html
 <p>Este é um parágrafo de texto.</p>
 ```
 
-- **blockquote.html**
+- **blockquote**
 
-**Descrição:** O arquivo blockquote.html geralmente contém uma citação longa ou destacada.
+**Descrição:** O elemento blockquote geralmente contém uma citação longa ou destacada.
 
 ```html
 <blockquote>
@@ -23,9 +23,9 @@ sidebar_label: Elementos de texto
 </blockquote>
 ```
 
-- **dd.html**
+- **dd**
 
-**Descrição:** O arquivo dd.html geralmente contém uma definição em uma lista de descrição (`<dl>`).
+**Descrição:** O elemento dd geralmente contém uma definição em uma lista de descrição (`<dl>`).
 
 ```html
 <dl>
@@ -34,9 +34,9 @@ sidebar_label: Elementos de texto
 </dl>
 ```
 
-- **div.html**
+- **div**
 
-**Descrição:** O arquivo div.html geralmente contém um contêiner genérico usado para agrupar elementos.
+**Descrição:** O elemento div geralmente contém um contêiner genérico usado para agrupar elementos.
 
 ```html
 <div>
@@ -44,9 +44,9 @@ sidebar_label: Elementos de texto
 </div>
 ```
 
-- **dl.html**
+- **dl**
 
-**Descrição:** O arquivo dl.html geralmente contém uma lista de descrição (`<dl>`), que consiste em termos (`<dt>`) e suas definições (`<dd>`).
+**Descrição:** O elemento dl geralmente contém uma lista de descrição (`<dl>`), que consiste em termos (`<dt>`) e suas definições (`<dd>`).
 
 ```html
 <dl>
@@ -57,9 +57,9 @@ sidebar_label: Elementos de texto
 </dl>
 ```
 
-- **dt.html**
+- **dt**
 
-**Descrição:** O arquivo dt.html geralmente contém um termo em uma lista de descrição (`<dl>`).
+**Descrição:** O elemento dt geralmente contém um termo em uma lista de descrição (`<dl>`).
 
 ```html
 <dl>
@@ -68,9 +68,9 @@ sidebar_label: Elementos de texto
 </dl>
 ```
 
-- **figcaption.html**
+- **figcaption**
 
-**Descrição:** O arquivo figcaption.html geralmente contém uma legenda para um elemento `<figure>`.
+**Descrição:** O elemento figcaption geralmente contém uma legenda para um elemento `<figure>`.
 
 ```html
 <figure>
@@ -79,9 +79,9 @@ sidebar_label: Elementos de texto
 </figure>
 ```
 
-- **figure.html**
+- **figure**
 
-**Descrição:** O arquivo figure.html geralmente contém conteúdo autônomo, como uma imagem, gráfico ou diagrama.
+**Descrição:** O elemento figure geralmente contém conteúdo autônomo, como uma imagem, gráfico ou diagrama.
 
 ```html
 <figure>
@@ -89,17 +89,17 @@ sidebar_label: Elementos de texto
 </figure>
 ```
 
-- **hr.html**
+- **hr**
 
-**Descrição:** O arquivo hr.html geralmente contém uma linha horizontal para separar conteúdo.
+**Descrição:** O elemento hr geralmente contém uma linha horizontal para separar conteúdo.
 
 ```html
 <hr>
 ```
 
-- **li.html**
+- **li**
 
-**Descrição:** O arquivo li.html geralmente contém um item de uma lista (`<ul>`, `<ol>`).
+**Descrição:** O elemento li geralmente contém um item de uma lista (`<ul>`, `<ol>`).
 
 ```html
 <ul>
@@ -108,9 +108,9 @@ sidebar_label: Elementos de texto
 </ul>
 ```
 
-- **menu.html**
+- **menu**
 
-**Descrição:** O arquivo menu.html geralmente contém um menu de navegação.
+**Descrição:** O elemento menu geralmente contém um menu de navegação.
 
 ```html
 <menu>
@@ -118,9 +118,9 @@ sidebar_label: Elementos de texto
 </menu>
 ```
 
-- **ol.html**
+- **ol**
 
-**Descrição:** O arquivo ol.html geralmente contém uma lista ordenada (`<ol>`).
+**Descrição:** O elemento ol geralmente contém uma lista ordenada (`<ol>`).
 
 ```html
 <ol>
@@ -129,17 +129,17 @@ sidebar_label: Elementos de texto
 </ol>
 ```
 
-- **p.html**
+- **p**
 
-**Descrição:** O arquivo p.html geralmente contém um parágrafo de texto.
+**Descrição:** O elemento p geralmente contém um parágrafo de texto.
 
 ```html
 <p>Este é um parágrafo de texto.</p>
 ```
 
-- **pre.html**
+- **pre**
 
-**Descrição:** O arquivo pre.html geralmente contém texto pré-formatado, mantendo espaçamentos e quebras de linha originais.
+**Descrição:** O elemento pre geralmente contém texto pré-formatado, mantendo espaçamentos e quebras de linha originais.
 
 ```html
 <pre>
@@ -148,9 +148,9 @@ sidebar_label: Elementos de texto
 </pre>
 ```
 
-- **ul.html**
+- **ul**
 
-**Descrição:** O arquivo ul.html geralmente contém uma lista não ordenada (`<ul>`).
+**Descrição:** O elemento ul geralmente contém uma lista não ordenada (`<ul>`).
 
 ```html
 <ul>

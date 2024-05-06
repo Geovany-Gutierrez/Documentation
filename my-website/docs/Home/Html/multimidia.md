@@ -8,14 +8,14 @@ sidebar_label: Multimidia
 
 **Conceito e Uso:** Elementos de multimídia, como `<img>` e `<video>`, permitem a inclusão de conteúdo como imagens, áudio e vídeo em uma página HTML.
 
-**Exemplo de código (img.html):**
+**Exemplo de código (img):**
 ```html
 <img src="imagem.jpg" alt="Descrição da imagem">
 ```
 
-- **area.html**
+- **area**
 
-**Descrição:** O arquivo area.html geralmente contém uma área clicável em uma imagem, usada em mapas de imagem.
+**Descrição:** O elemento area geralmente contém uma área clicável em uma imagem, usada em mapas de imagem.
 
 ```html
 <map name="mapa">
@@ -25,9 +25,9 @@ sidebar_label: Multimidia
 <img src="imagem.jpg" alt="Mapa de imagem" usemap="#mapa">
 ```
 
-- **audio.html**
+- **audio**
 
-**Descrição:** O arquivo audio.html geralmente contém um elemento de áudio para reprodução de som.
+**Descrição:** O elemento audio geralmente contém um elemento de áudio para reprodução de som.
 
 ```html
 <audio controls>
@@ -36,17 +36,17 @@ sidebar_label: Multimidia
 </audio>
 ```
 
-- **img.html**
+- **img**
 
-**Descrição:** O arquivo img.html geralmente contém uma imagem.
+**Descrição:** O elemento img geralmente contém uma imagem.
 
 ```html
 <img src="imagem.jpg" alt="Descrição da imagem">
 ```
 
-- **map.html**
+- **map**
 
-**Descrição:** O arquivo map.html geralmente contém um mapa de imagem, associado a áreas clicáveis em uma imagem.
+**Descrição:** O elemento map geralmente contém um mapa de imagem, associado a áreas clicáveis em uma imagem.
 
 ```html
 <map name="mapa">
@@ -56,9 +56,9 @@ sidebar_label: Multimidia
 <img src="imagem.jpg" alt="Mapa de imagem" usemap="#mapa">
 ```
 
-- **track.html**
+- **track**
 
-**Descrição:** O arquivo track.html geralmente contém uma trilha de texto ou metadados para elementos de áudio ou vídeo.
+**Descrição:** O elemento track geralmente contém uma trilha de texto ou metadados para elementos de áudio ou vídeo.
 
 ```html
 <video controls>
@@ -68,9 +68,9 @@ sidebar_label: Multimidia
 </video>
 ```
 
-- **video.html**
+- **video**
 
-**Descrição:** O arquivo video.html geralmente contém um elemento de vídeo para reprodução de vídeo.
+**Descrição:** O elemento video geralmente contém um elemento de vídeo para reprodução de vídeo.
 
 ```html
 <video controls>

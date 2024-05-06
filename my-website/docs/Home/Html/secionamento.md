@@ -8,7 +8,7 @@ sidebar_label: Secionamento
 
 **Conceito e Uso:** Os elementos de secionamento, como `<section>` e `<article>`, ajudam a organizar o conteúdo da página em seções distintas, como artigos, cabeçalhos e rodapés.
 
-**Exemplo de código (article.html):**
+**Exemplo de código (article):**
 ```html
 <article>
     <h2>Título do Artigo</h2>
@@ -16,9 +16,9 @@ sidebar_label: Secionamento
 </article>
 ```
 
-- **address.html**
+- **address**
 
-**Descrição:** O arquivo address.html geralmente contém informações de contato, como endereços de email ou físicos.
+**Descrição:** O elemento address geralmente contém informações de contato, como endereços de email ou físicos.
 
 ```html
 <address>
@@ -27,9 +27,9 @@ sidebar_label: Secionamento
 </address>
 ```
 
-- **article.html**
+- **article**
 
-**Descrição:** Este arquivo geralmente contém conteúdo independente e autônomo, como um post de blog ou uma notícia.
+**Descrição:** Este elemento geralmente contém conteúdo independente e autônomo, como um post de blog ou uma notícia.
 
 ```html
 <article>
@@ -37,9 +37,9 @@ sidebar_label: Secionamento
 </article>
 ```
 
-- **aside.html**
+- **aside**
 
-**Descrição:** O arquivo aside.html geralmente contém conteúdo relacionado ao conteúdo principal, mas que pode ser visualizado separadamente.
+**Descrição:** O elemento aside geralmente contém conteúdo relacionado ao conteúdo principal, mas que pode ser visualizado separadamente.
 
 ```html
 <aside>
@@ -47,9 +47,9 @@ sidebar_label: Secionamento
 </aside>
 ```
 
-- **footer.html**
+- **footer**
 
-**Descrição:** O arquivo footer.html geralmente contém informações de rodapé, como links de navegação secundária ou informações de contato.
+**Descrição:** O elemento footer geralmente contém informações de rodapé, como links de navegação secundária ou informações de contato.
 
 ```html
 <footer>
@@ -57,9 +57,9 @@ sidebar_label: Secionamento
 </footer>
 ```
 
-- **h1 a h6.html**
+- **h1 a h6**
 
-**Descrição:** Estes arquivos geralmente contêm cabeçalhos de diferentes níveis de importância, variando de `<h1>` (mais importante) a `<h6>` (menos importante).
+**Descrição:** Estes elementos geralmente contêm cabeçalhos de diferentes níveis de importância, variando de `<h1>` (mais importante) a `<h6>` (menos importante).
 
 ```html
 <h1>Título Principal</h1>
@@ -67,9 +67,9 @@ sidebar_label: Secionamento
 <!-- Outros cabeçalhos aqui -->
 ```
 
-- **header.html**
+- **header**
 
-**Descrição:** O arquivo header.html geralmente contém o cabeçalho da página, incluindo o logotipo e o menu de navegação principal.
+**Descrição:** O elemento header geralmente contém o cabeçalho da página, incluindo o logotipo e o menu de navegação principal.
 
 ```html
 <header>
@@ -77,9 +77,9 @@ sidebar_label: Secionamento
 </header>
 ```
 
-- **hgroup.html**
+- **hgroup**
 
-**Descrição:** O arquivo hgroup.html geralmente contém um grupo de cabeçalhos `<h1>` a `<h6>`, usado para agrupar cabeçalhos relacionados.
+**Descrição:** O elemento hgroup geralmente contém um grupo de cabeçalhos `<h1>` a `<h6>`, usado para agrupar cabeçalhos relacionados.
 
 ```html
 <hgroup>
@@ -88,9 +88,9 @@ sidebar_label: Secionamento
 </hgroup>
 ```
 
-- **main.html**
+- **main**
 
-**Descrição:** O arquivo main.html geralmente contém o conteúdo principal da página, excluindo cabeçalhos e rodapés.
+**Descrição:** O elemento main geralmente contém o conteúdo principal da página, excluindo cabeçalhos e rodapés.
 
 ```html
 <main>
@@ -98,9 +98,9 @@ sidebar_label: Secionamento
 </main>
 ```
 
-- **nav.html**
+- **nav**
 
-**Descrição:** O arquivo nav.html geralmente contém links de navegação principal.
+**Descrição:** O elemento nav geralmente contém links de navegação principal.
 
 ```html
 <nav>
@@ -108,9 +108,9 @@ sidebar_label: Secionamento
 </nav>
 ```
 
-- **search.html**
+- **search**
 
-**Descrição:** O arquivo search.html geralmente contém um formulário de pesquisa.
+**Descrição:** O elemento search geralmente contém um formulário de pesquisa.
 
 ```html
 <form action="/search" method="get">
@@ -119,9 +119,9 @@ sidebar_label: Secionamento
 </form>
 ```
 
-- **section.html**
+- **section**
 
-**Descrição:** O arquivo section.html geralmente contém uma seção autônoma de conteúdo dentro de um documento.
+**Descrição:** O elemento section geralmente contém uma seção autônoma de conteúdo dentro de um documento.
 
 ```html
 <section>

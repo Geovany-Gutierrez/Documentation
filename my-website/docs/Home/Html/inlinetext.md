@@ -6,134 +6,134 @@ sidebar_label: Texto em linha
 
 **Conceito e Uso:** Os elementos de texto em linha, como `<a>` e `<strong>`, são usados para aplicar estilos e funcionalidades específicas a partes individuais do texto.
 
-**Exemplo de código (a.html):**
+**Exemplo de código (a):**
 ```html
 <a href="https://exemplo.com">Link de Exemplo</a>
 ```
 
-- **a.html**
+- **a**
 
-**Descrição:** O arquivo a.html geralmente contém um link (`<a>`) para outra página ou recurso.
+**Descrição:** O elemento a geralmente contém um link (`<a>`) para outra página ou recurso.
 
 ```html
 <a href="https://exemplo.com">Link de Exemplo</a>
 ```
 
-- **abbr.html**
+- **abbr**
 
-**Descrição:** O arquivo abbr.html geralmente contém uma abreviação ou acrônimo.
+**Descrição:** O elemento abbr geralmente contém uma abreviação ou acrônimo.
 
 ```html
 <abbr title="World Health Organization">WHO</abbr>
 ```
 
-- **b.html**
+- **b**
 
-**Descrição:** O arquivo b.html geralmente contém texto em negrito.
+**Descrição:** O elemento b geralmente contém texto em negrito.
 
 ```html
 <b>Texto em Negrito</b>
 ```
 
-- **bdi.html**
+- **bdi**
 
-**Descrição:** O arquivo bdi.html geralmente contém texto que deve ser isolado devido a possíveis direções de texto misturadas.
+**Descrição:** O elemento bdi geralmente contém texto que deve ser isolado devido a possíveis direções de texto misturadas.
 
 ```html
 <bdi>Texto isolado</bdi>
 ```
 
-- **bdo.html**
+- **bdo**
 
-**Descrição:** O arquivo bdo.html geralmente contém texto que deve ser exibido em uma direção específica.
+**Descrição:** O elemento bdo geralmente contém texto que deve ser exibido em uma direção específica.
 
 ```html
 <bdo dir="rtl">Texto RTL</bdo>
 ```
 
-- **br.html**
+- **br**
 
-**Descrição:** O arquivo br.html geralmente contém uma quebra de linha.
+**Descrição:** O elemento br geralmente contém uma quebra de linha.
 
 ```html
 Linha 1<br>Linha 2
 ```
 
-- **cite.html**
+- **cite**
 
-**Descrição:** O arquivo cite.html geralmente contém uma referência a uma obra ou fonte.
+**Descrição:** O elemento cite geralmente contém uma referência a uma obra ou fonte.
 
 ```html
 <cite>Título da Obra</cite>
 ```
 
-- **code.html**
+- **code**
 
-**Descrição:** O arquivo code.html geralmente contém código de programação.
+**Descrição:** O elemento code geralmente contém código de programação.
 
 ```html
 <code>console.log('Hello, world!');</code>
 ```
 
-- **data.html**
+- **data**
 
-**Descrição:** O arquivo data.html geralmente contém um valor de data ou hora.
+**Descrição:** O elemento data geralmente contém um valor de data ou hora.
 
 ```html
 <p>Publicado em <data value="2024-05-07">7 de maio de 2024</data></p>
 ```
 
-- **dfn.html**
+- **dfn**
 
-**Descrição:** O arquivo dfn.html geralmente contém uma definição ou termo de glossário.
+**Descrição:** O elemento dfn geralmente contém uma definição ou termo de glossário.
 
 ```html
 <dfn>Definição</dfn>
 ```
 
-- **em.html**
+- **em**
 
-**Descrição:** O arquivo em.html geralmente contém texto enfatizado.
+**Descrição:** O elemento em geralmente contém texto enfatizado.
 
 ```html
 <em>Texto enfatizado</em>
 ```
 
-- **i.html**
+- **i**
 
-**Descrição:** O arquivo i.html geralmente contém texto em itálico.
+**Descrição:** O elemento i geralmente contém texto em itálico.
 
 ```html
 <i>Texto em itálico</i>
 ```
 
-- **kbd.html**
+- **kbd**
 
-**Descrição:** O arquivo kbd.html geralmente contém entrada do teclado.
+**Descrição:** O elemento kbd geralmente contém entrada do teclado.
 
 ```html
 <kbd>Ctrl + C</kbd>
 ```
 
-- **mark.html**
+- **mark**
 
-**Descrição:** O arquivo mark.html geralmente contém texto marcado ou destacado.
+**Descrição:** O elemento mark geralmente contém texto marcado ou destacado.
 
 ```html
 <mark>Texto destacado</mark>
 ```
 
-- **q.html**
+- **q**
 
-**Descrição:** O arquivo q.html geralmente contém uma citação curta.
+**Descrição:** O elemento q geralmente contém uma citação curta.
 
 ```html
 <q>Citação curta</q>
 ```
 
-- **rb.html**
+- **rb**
 
-**Descrição:** O arquivo rb.html geralmente contém texto de uma base de ruby.
+**Descrição:** O elemento rb geralmente contém texto de uma base de ruby.
 
 ```html
 <ruby>
@@ -142,9 +142,9 @@ Linha 1<br>Linha 2
 </ruby>
 ```
 
-- **rt.html**
+- **rt**
 
-**Descrição:** O arquivo rt.html geralmente contém texto de uma anotação de ruby.
+**Descrição:** O elemento rt geralmente contém texto de uma anotação de ruby.
 
 ```html
 <ruby>
@@ -153,9 +153,9 @@ Linha 1<br>Linha 2
 </ruby>
 ```
 
-- **ruby.html**
+- **ruby**
 
-**Descrição:** O arquivo ruby.html geralmente contém uma anotação de ruby, que é usada em texto chinês ou japonês.
+**Descrição:** O elemento ruby geralmente contém uma anotação de ruby, que é usada em texto chinês ou japonês.
 
 ```html
 <ruby>
@@ -164,33 +164,33 @@ Linha 1<br>Linha 2
 </ruby>
 ```
 
-- **s.html**
+- **s**
 
-**Descrição:** O arquivo s.html geralmente contém texto que foi riscado.
+**Descrição:** O elemento s geralmente contém texto que foi riscado.
 
 ```html
 <s>Texto riscado</s>
 ```
 
-- **samp.html**
+- **samp**
 
-**Descrição:** O arquivo samp.html geralmente contém uma amostra de saída de um programa de computador.
+**Descrição:** O elemento samp geralmente contém uma amostra de saída de um programa de computador.
 
 ```html
 <samp>Resultado</samp>
 ```
 
-- **small.html**
+- **small**
 
-**Descrição:** O arquivo small.html geralmente contém texto que é estilizado para ser menor que o texto circundante.
+**Descrição:** O elemento small geralmente contém texto que é estilizado para ser menor que o texto circundante.
 
 ```html
 <small>Pequeno</small>
 ```
 
-- **span.html**
+- **span**
 
-**Descrição:** O arquivo span.html geralmente contém um trecho de texto que pode ser estilizado separadamente do texto circundante.
+**Descrição:** O elemento span geralmente contém um trecho de texto que pode ser estilizado separadamente do texto circundante.
 
 ```html
 <span
@@ -198,57 +198,57 @@ Linha 1<br>Linha 2
 >Texto com estilo personalizado</span>
 ```
 
-- **strong.html**
+- **strong**
 
-**Descrição:** O arquivo strong.html geralmente contém texto forte ou enfatizado.
+**Descrição:** O elemento strong geralmente contém texto forte ou enfatizado.
 
 ```html
 <strong>Texto forte</strong>
 ```
 
-- **sub.html**
+- **sub**
 
-**Descrição:** O arquivo sub.html geralmente contém texto subscrito.
+**Descrição:** O elemento sub geralmente contém texto subscrito.
 
 ```html
 <sub>Texto subscrito</sub>
 ```
 
-- **sup.html**
+- **sup**
 
-**Descrição:** O arquivo sup.html geralmente contém texto sobrescrito.
+**Descrição:** O elemento sup geralmente contém texto sobrescrito.
 
 ```html
 <sup>Texto sobrescrito</sup>
 ```
 
-- **time.html**
+- **time**
 
-**Descrição:** O arquivo time.html geralmente contém um valor de data ou hora, com opções de formatação.
+**Descrição:** O elemento time geralmente contém um valor de data ou hora, com opções de formatação.
 
 ```html
 <time datetime="2024-05-07">7 de maio de 2024</time>
 ```
 
-- **u.html**
+- **u**
 
-**Descrição:** O arquivo u.html geralmente contém texto sublinhado.
+**Descrição:** O elemento u geralmente contém texto sublinhado.
 
 ```html
 <u>Texto sublinhado</u>
 ```
 
-- **var.html**
+- **var**
 
-**Descrição:** O arquivo var.html geralmente contém uma variável de programação.
+**Descrição:** O elemento var geralmente contém uma variável de programação.
 
 ```html
 <var>x</var>
 ```
 
-- **wbr.html**
+- **wbr**
 
-**Descrição:** O arquivo wbr.html geralmente contém uma oportunidade de quebra de linha opcional.
+**Descrição:** O elemento wbr geralmente contém uma oportunidade de quebra de linha opcional.
 
 ```html
 Este é um texto que pode quebrar<br>em duas linhas.

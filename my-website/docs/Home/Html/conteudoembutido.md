@@ -8,25 +8,32 @@ sidebar_label: Elementos Raiz
 
 **Conceito e Uso:** Elementos de conteúdo embutido, como `<iframe>` e `<embed>`, permitem incorporar conteúdo de outras fontes, como vídeos do YouTube ou mapas do Google.
 
-**Exemplo de código (iframe.html):**
+**Exemplo de código (iframe):**
+
 ```html
-<iframe src="https://www.youtube.com/embed/seu_video" frameborder="0" allowfullscreen></iframe>
+<iframe
+  src="https://www.youtube.com/embed/seu_video"
+  frameborder="0"
+  allowfullscreen
+></iframe>
 ```
 
-- **embed.html**
+- **embed**
 
-**Descrição:** O arquivo embed.html geralmente contém um conteúdo incorporado de uma fonte externa, como um vídeo ou áudio.
+**Descrição:** O elemento embed geralmente contém um conteúdo incorporado de uma fonte externa, como um vídeo ou áudio.
 
-**Exemplo de código (embed.html):**
+**Exemplo de código (embed):**
+
 ```html
-<embed src="video.mp4" type="video/mp4">
+<embed src="video.mp4" type="video/mp4" />
 ```
 
-- **iframe.html**
+- **iframe**
 
-**Descrição:** O arquivo iframe.html geralmente contém um frame embutido de uma fonte externa, como um site ou vídeo.
+**Descrição:** O elemento iframe geralmente contém um frame embutido de uma fonte externa, como um site ou vídeo.
 
-**Exemplo de código (iframe.html):**
+**Exemplo de código (iframe):**
+
 ```html
 <iframe src="https://www.exemplo.com" frameborder="0"></iframe>
 ```
