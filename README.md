@@ -8,6 +8,14 @@ Este projeto utiliza <a href="https://docusaurus.io/" target="_blank"><b>Docusau
 
 Siga estas etapas para fazer alterações na documentação e atualizar o site:
 
+---
+# ESSENCIAL:
+   - Use o comando abaixo para poder prosseguir nas etapas
+   ```node
+   cd my-website
+   ```
+---
+
 1. **Inicie o servidor de desenvolvimento**: 
    - Use o comando abaixo para iniciar o servidor de desenvolvimento.
    ```node
