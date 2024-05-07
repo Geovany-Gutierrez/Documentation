@@ -54,15 +54,16 @@ const config = {
       title: "Documentation",
       logo: {
         alt: "Logo do Projeto",
-        src: "img/logo.svg",
+        src: "https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white",
+        href: 'https://github.com/geovany-gutierrez',
       },
       items: [
         {
-          type: "docSidebar",
-          sidebarId: "tutorialSidebar",
-          position: "left",
-          label: "Home",
-        },
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Home',
+        },        
         {
           label: 'Fundamentos', // Este é o texto que aparecerá na navbar
           position: 'left',
@@ -111,27 +112,6 @@ const config = {
           ],
         },    
       ],
-    },
-
-    footer: {
-      style: "dark",
-      links: [
-        {
-          title: "Documentação",
-          items: [
-            {
-              label: "Home",
-              to: "/",
-            },
-            {
-              label: "JavaScript",
-              to: "/Documentation/docs/category/anotações-do-javascript",
-            },
-          ],
-        },
-        // Adicione outros links aqui se necessário
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} Geovany-Gutierrez. Construído com Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
