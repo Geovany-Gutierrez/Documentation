@@ -12,7 +12,7 @@ const CardList = [
           Tecnologias atualmente em uso ou em processo de implementação,
           incluindo:
         </p>
-        <ul>
+        <ul style={{display: "flex", flexWrap: "wrap", listStyle: "none;", gap: 20 + 'px', padding: 20 + 'px', borderRadius: "8px;", margin: 8 + 'px'}}>
           <li>
             <img
               src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
@@ -64,7 +64,7 @@ const CardList = [
     description: (
       <div>
         <p>Tecnologias planejadas para futura implementação, incluindo:</p>
-        <ul>
+        <ul style={{display: "flex", flexWrap: "wrap", listStyle: "none;", gap: 20 + 'px', padding: 20 + 'px', borderRadius: "8px;", margin: 8 + 'px', boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1);"}}>
           <li>
             <img
               src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"
@@ -122,7 +122,7 @@ const CardList = [
     description: (
       <div>
         <p>Controle de versão do código-fonte, incluindo:</p>
-        <ul>
+        <ul style={{display: "flex", flexWrap: "wrap", listStyle: "none;", gap: 20 + 'px', padding: 20 + 'px', borderRadius: "8px;", margin: 8 + 'px', boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1);"}}>
           <li>
             <img
               src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"
@@ -150,7 +150,7 @@ export default function CustomCards() {
   return (
     <section className={styles.customCards}>
       <div className="container">
-        <div className="row" style={{ display: "grid" }}>
+        <div className="row" style={{ width: "100%;", height: "100%;", display: "flex;", flexWrap: "wrap;", listStyle: "none;", gap: 20 + 'px', padding: 20 + 'px', backgroundColor: '#27272a', boxShadow: "0 4px 8px rgba(0, 0, 0, 0.4)", borderRadius: 8 + 'px' }}>
           {CardList.map((props, idx) => (
             <Card key={idx} {...props} />
           ))}
