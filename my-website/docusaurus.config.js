@@ -67,34 +67,26 @@ const config = {
         {
           label: 'Fundamentos', // Este é o texto que aparecerá na navbar
           position: 'left',
-          items: [ // Os itens do dropdown de primeiro nível
+          items: [ 
             {
-              to: '/Documentation/docs/Home/Fundamentos/intro',
+              to: '/Documentation/docs/category/poo-e-principios-solid',
+              label: 'Conceitos da programação',
+            },
+            {
+              to: '/Documentation/docs/category/c',
               label: 'Fundamentos Importantes do C#', // O texto que aparecerá no dropdown
             },
             {
-              to: '/Documentation/docs/Home/Fundamentos/mobileesqlite/conceitosMobile',
-              label: 'Conceitos em Mobile: Conceitos Importantes',
-            },
-            {
-              to: '/Documentation/docs/Home/Fundamentos/mobileesqlite/sqlite',
-              label: 'Conceitos em Mobile: SQLite',
-            },
-            {
-              to: '/Documentation/docs/Home/Fundamentos/pooesolid/poo',
-              label: 'POO e Princípios SOLID: Princípios',
-            },
-            {
-              to: '/Documentation/docs/Home/Fundamentos/pooesolid/solid',
-              label: 'POO e Princípios SOLID: Princípios SOLID',
-            },
+              to: '/Documentation/docs/category/desenvolvimento-mobile',
+              label: 'Desenvolvimento Mobile',
+            },          
             // Adicione mais itens aqui se necessário
           ],
         },
-        
         {
           label: 'Desenvolvimento Web', // Este é o texto sobre o qual o usuário passará o mouse
           position: 'left',
+          to: '/Documentation/docs/category/desenvolvimento-web', // O caminho para a página de HTML
           items: [ // Itens do dropdown
             {
               to: '/Documentation/docs/category/seção-html', // O caminho para a página de HTML
