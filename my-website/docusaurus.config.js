@@ -51,7 +51,7 @@ const config = {
   themeConfig: {
     image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: "Documentation",
+      title: "",
       logo: {
         alt: "Logo do Projeto",
         src: "https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white",
