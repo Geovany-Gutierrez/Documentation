@@ -1,0 +1,9 @@
+{
+  "label": "Estudo Projeto",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "title": "Seção dedicada ao estudo TS",
+    "description": "Estudando e entendendo codigos."
+  }
+}
