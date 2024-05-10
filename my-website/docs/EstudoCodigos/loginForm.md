@@ -28,63 +28,85 @@ const Form: React.FC = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [formType, setFormType] = useState(0); // 0 é o login e 1 é o registro
+  const [loggedIn, setLoggedIn] = useState(false); 
+
+  const handleToggleForm = () => {
+    setUsername(""); // Limpa o username ao alternar entre os formulários
+    setPassword(""); // Limpa a senha ao alternar entre os formulários
+    setFormType(formType === 0 ? 1 : 0);
+  };
 
   const handleRegister = (e: { preventDefault: () => void }) => {
     e.preventDefault();
-  
+
     const usernameToCreate = (document.getElementById(
       "createUser"
-    ) as HTMLInputElement)?.value;
+    ) as HTMLInputElement)?.value.trim(); // Remove espaços extras
     const passwordToCreate = (document.getElementById(
       "createPassword"
-    ) as HTMLInputElement)?.value;
-  
-    // Verifica se o usuário já existe
-    const existingUser = JSON.parse(localStorage.getItem(usernameToCreate) || 'null');
+    ) as HTMLInputElement)?.value.trim(); // Remove espaços extras
+
+    if (!usernameToCreate || !passwordToCreate) {
+      alert("Por favor, preencha todos os campos.");
+      return;
+    }
+
+    const existingUser = JSON.parse(
+      localStorage.getItem(usernameToCreate) || "null"
+    );
     if (existingUser) {
       alert("Este usuário já existe. Por favor, escolha outro nome de usuário.");
-    } else {
-      // Cria um novo usuário
-      const token = generateToken();
-      const newUser = { username: usernameToCreate, password: passwordToCreate, token: token };
-      localStorage.setItem(usernameToCreate, JSON.stringify(newUser));
-      alert("Registro bem-sucedido! Por favor, faça login.");
+      return;
     }
+
+    const token = generateToken();
+    const newUser = {
+      username: usernameToCreate,
+      password: passwordToCreate,
+      token: token
+    };
+
+    localStorage.setItem(usernameToCreate, JSON.stringify(newUser));
+    alert("Registro bem-sucedido! Por favor, faça login.");
+    handleToggleForm();
   };
-  
+
   const handleLogin = (event: React.FormEvent) => {
     event.preventDefault();
-  
+
     const usernameInput = (document.getElementById(
       "username"
-    ) as HTMLInputElement)?.value;
+    ) as HTMLInputElement)?.value.trim(); // Remove espaços extras
     const passwordInput = (document.getElementById(
       "password"
-    ) as HTMLInputElement)?.value;
-  
-    // Verifica se o usuário existe e se a senha coincide
-    const storedUser = JSON.parse(localStorage.getItem(usernameInput) || 'null');
+    ) as HTMLInputElement)?.value.trim(); // Remove espaços extras
+
+    if (!usernameInput || !passwordInput) {
+      alert("Por favor, preencha todos os campos.");
+      return;
+    }
+
+    const storedUser = JSON.parse(
+      localStorage.getItem(usernameInput) || "null"
+    );
     if (storedUser && storedUser.password === passwordInput) {
       if (!storedUser.token) {
-        // Se o token estiver vazio, cria um novo token
         const token = generateToken();
         storedUser.token = token;
         localStorage.setItem(usernameInput, JSON.stringify(storedUser));
       }
+      localStorage.setItem('currentUser', JSON.stringify(storedUser));
+      setLoggedIn(true);
       alert("Login bem-sucedido!");
     } else {
-      // Se o usuário ou senha estiverem incorretos, exibe um alerta
       alert("Usuário ou senha incorretos!");
     }
   };
 
-  const handleToggleForm = () => {
-    setFormType(formType === 0 ? 1 : 0);
-  };
   return (
     <form
       onSubmit={formType === 0 ? handleLogin : handleRegister}
-      action="/personagens"
+      action=""
     >
       <Title htmlFor="username">
         {formType === 0 ? "Bem vindo(a) de volta!" : "Crie sua conta!"}
@@ -129,6 +151,7 @@ const Form: React.FC = () => {
 };
 
 export default Form;
+
 ```
 </details>
 
@@ -322,4 +345,90 @@ export default Form;
 ```
 
 - Finalmente, o componente `Form` é exportado como padrão para que possa ser importado e utilizado em outros arquivos.
+</details>
+
+```markdown
+<details>
+<summary>Alterações de correção:</summary>
+
+- Na função `handleRegister`, corrigimos a verificação de existência de usuário. Agora, verificamos se já existe um usuário com o mesmo `username` no localStorage antes de tentar criar um novo usuário.
+- Na função `handleRegister`, corrigimos a remoção do usuário existente. Agora, removemos a chave do localStorage usando o `username` do usuário existente.
+</details>
+```
+
+<details>
+<summary>Entendendo o código</summary>
+
+```javascript
+import {
+  Title,
+  Paragraph,
+  InputField,
+  FormLabel,
+  SubmitButton,
+  RedSpan,
+} from "../styles/form.styles";
+```
+
+- Aqui estamos importando componentes estilizados do arquivo `form.styles`. Esses componentes estilizados são provavelmente estilos reutilizáveis para os elementos do formulário, como títulos, parágrafos, campos de entrada, botões, etc.
+
+```javascript
+import React, { useState } from "react";
+```
+
+- Importamos o React e a função `useState`. O React é a biblioteca fundamental para construir interfaces de usuário em React, e `useState` é um gancho que permite adicionar estado a componentes de função.
+
+```javascript
+function generateToken() {
+  // Gera um número aleatório de 16 dígitos
+  return Math.random().toString(36).substring(2, 18);
+}
+```
+
+- Aqui temos uma função chamada `generateToken`, que gera um token aleatório de 16 caracteres. Esse token é usado para identificar usuários durante o processo de registro.
+
+```javascript
+const Form: React.FC = () => {
+```
+
+- Aqui declaramos um componente de função chamado `Form`. Ele é definido como um componente de função do React (`React.FC`).
+
+```javascript
+const [username, setUsername] = useState("");
+const [password, setPassword] = useState("");
+const [formType, setFormType] = useState(0);
+```
+
+- Estamos usando a função `useState` para definir três estados locais dentro do componente `Form`: `username`, `password` e `formType`. `useState` retorna um array com dois elementos: o estado atual e uma função para atualizar esse estado.
+
+```javascript
+const handleRegister = (e: { preventDefault: () => void }) => {
+  e.preventDefault();
+
+  const usernameToCreate = (document.getElementById(
+    "createUser"
+  ) as HTMLInputElement)?.value;
+  const passwordToCreate = (document.getElementById(
+    "createPassword"
+  ) as HTMLInputElement)?.value;
+
+  // Verifica se o usuário já existe
+  const existingUser = JSON.parse(localStorage.getItem(usernameToCreate) || 'null');
+  if (existingUser) {
+    alert("Este usuário já existe. Por favor, escolha outro nome de usuário.");
+  } else {
+    // Cria um novo usuário
+    const token = generateToken();
+    const newUser = { username: usernameToCreate, password: passwordToCreate, token: token };
+    localStorage.setItem(usernameToCreate, JSON.stringify(newUser));
+    alert("Registro bem-sucedido! Por favor, faça login.");
+  }
+};
+```
+<details>
+<summary>Alterações de correção:</summary>
+
+- Na função `handleRegister`, corrigimos a verificação de existência de usuário. Agora, verificamos se já existe um usuário com o mesmo `username` no localStorage antes de tentar criar um novo usuário.
+- Na função `handleRegister`, caso o usuario exista mas esteja vazio, acontece uma sobreposição
+- Na função `handleRegister`, corrigimos a remoção do usuário existente. Agora, removemos a chave do localStorage usando o `username` do usuário existente.
 </details>
