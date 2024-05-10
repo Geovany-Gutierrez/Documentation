@@ -152,7 +152,6 @@ const Form: React.FC = () => {
 
 export default Form;
 
-```
 </details>
 
 <details>
@@ -166,7 +165,6 @@ import {
   SubmitButton,
   RedSpan,
 } from "../styles/form.styles";
-```
 
 - Aqui estamos importando componentes estilizados do arquivo `form.styles`. Esses componentes estilizados são provavelmente estilos reutilizáveis para os elementos do formulário, como títulos, parágrafos, campos de entrada, botões, etc.
 
@@ -347,14 +345,12 @@ export default Form;
 - Finalmente, o componente `Form` é exportado como padrão para que possa ser importado e utilizado em outros arquivos.
 </details>
 
-```markdown
 <details>
 <summary>Alterações de correção:</summary>
 
 - Na função `handleRegister`, corrigimos a verificação de existência de usuário. Agora, verificamos se já existe um usuário com o mesmo `username` no localStorage antes de tentar criar um novo usuário.
 - Na função `handleRegister`, corrigimos a remoção do usuário existente. Agora, removemos a chave do localStorage usando o `username` do usuário existente.
 </details>
-```
 
 <details>
 <summary>Entendendo o código</summary>
