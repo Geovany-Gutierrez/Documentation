@@ -1,8 +1,10 @@
 // @ts-check
-import { themes as prismThemes } from "prism-react-renderer";
+import { themes as prismThemes, themes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  
+
   title: "Documentation",
   tagline: "Por favor, ative o modo escuro.",
   favicon: "img/favicon.ico",
@@ -106,8 +108,17 @@ const config = {
       ],
     },
     prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
+      theme: prismThemes.duotoneDark, // Tema claro para Prism
+      darkTheme: prismThemes.okaidia, // Tema escuro para Prism
+    },
+    markdown: {
+      mermaid: true, // Habilita o suporte ao Mermaid
+    },
+    themes: ['@docusaurus/theme-mermaid'],
+    colorMode: {
+      defaultMode: 'dark', // Define o modo escuro como padrão
+      disableSwitch: false, // Permite ao usuário alternar entre os modos claro e escuro
+      respectPrefersColorScheme: true, // Respeita a preferência do sistema do usuário
     },
   },
 };
