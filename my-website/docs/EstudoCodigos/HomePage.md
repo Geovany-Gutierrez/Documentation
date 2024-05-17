@@ -4,6 +4,14 @@ title: Documentação - Desafio
 sidebar_label: Documentação - Desafio
 ---
 
+## Introdução
+
+1. **HomePage**: Este é um componente funcional que retorna um fragmento contendo dois componentes: `Navbar` e `CarouselCard`. `Navbar` é o componente que representa a barra de navegação do seu aplicativo, enquanto `CarouselCard` é o componente que renderiza o carrossel de cards.
+
+2. **CarouselCard**: Este é o componente principal que renderiza o carrossel de cards. Ele usa o hook `useState` para gerenciar o estado da lista de cards (`lista`), a lista completa de filmes para filtragem (`listaCompleta`) e a categoria atual (`categoriaAtual`). O hook `useEffect` é usado para carregar a categoria atual do localStorage quando o componente é montado e para carregar os dados do JSON sempre que a categoria atual muda. Há também uma função `filtrarFilmes` que filtra os filmes por cronologia ou ano de lançamento.
+
+3. **Card**: Este é um componente individual de card. Ele usa o hook `useState` para gerenciar se o card está expandido ou não (`isExpanded`). Ele retorna um `StyledCardContainer` que contém um `StyledCardImage` e, se o card estiver expandido, um `StyledCardExpand`.
+
 ## App.jsx
 
 ### Introdução
